@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 
-model = YOLO("yolov8n.pt")
+model = YOLO("yolov8n_custom_200_epoches_CPU_510_images.pt")
 
 # Export the model to TFLite format
 model.export(format="tflite", imgsz=240, int8=True)
